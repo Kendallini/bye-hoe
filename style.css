@@ -1,12 +1,13 @@
 body {
-    background-color: papayawhip;
-}
+    background-color: #ebd9d5;
 
+}
 .ball {
-    border: solid rgb(228, 197, 97) 5px;
-    position: fixed;
+   margin: 40px 0 20px 0;
+    border: solid #fbcbb5 5px;
+    position: relative;
     border-radius: 50%;
-    background: rgb(129, 199, 141);
+    background: #f9a778;
     height: 100px;
     width: 100px;
     left: 60%;
@@ -26,12 +27,80 @@ body {
         left: 100%;
     }
 }
+
 #text {
+    display: flex;
 text-align: center;
 padding: 8px 0 0 5.5px;
 font-family: 'Courier New', Courier, monospace;
 font-size: 20px;
-<!--
-border: red solid 2px;
--->
+font-weight: normal;
+
+}
+.container {
+    box-sizing: border-box;
+    
+     padding: 10px;
+    display: flex;
+    
+     
+ }
+ .box-1,
+ .box-2,
+ .box-3 {
+     background:#55c7b4;
+    box-sizing: border-box;
+    width: 980px;
+    margin: 0 500px 0 50px;
+    padding: 25px;
+    margin: 0 auto;
+    display: flex;
+    
+ }
+ .box-1 {
+    margin-left: 50px;
+    border-radius: 50px 50px 50px 50px;
+    transform: skewX(-20deg);
+ }
+
+ .box-2 {
+     margin: 0 20px 0 20px;
+     border-radius: 50px 50px 50px 50px;
+     transform: skewY(20deg);
+     
+ }
+
+ .box-3 {
+     margin-right: 50px;
+     border-radius: 50px 50px 50px 50px;
+     transform: skewX(20deg);
+ }
+
+.container .box-1 .link-1,
+.link-2,
+.link-3 {
+    font-family: monospace;
+    height: 50%;
+    font-size: 20px;
+    width: 65px;
+    margin: 0 auto;
+    color: black;
+ }
+
+.img-container {
+   
+   display: flex;
+   width: auto;
+   height: 540px;
+   margin: 0 auto;
+   padding: 0 100px 0 75px;
+}
+
+.img-container .hand {
+    margin: 0 20px 0 20px;
+    border-radius: 25%;
+}
+.img-container .alien,
+.balloon {
+    border-radius: 25%;
 }
