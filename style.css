@@ -1,3 +1,4 @@
+
 body {
     background-color: #ebd9d5;
 
@@ -15,6 +16,8 @@ body {
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in, stop, ease-out;
+    box-shadow: 0 10px 20px rgba(255,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
 }
 @keyframes swoosh {
     0% {
@@ -30,17 +33,16 @@ body {
 
 #text {
     display: flex;
-text-align: center;
-padding: 8px 0 0 5.5px;
-font-family: 'Courier New', Courier, monospace;
-font-size: 20px;
-font-weight: normal;
+    text-align: center;
+    padding: 8px 0 0 5.5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: normal;
 
 }
 .container {
     box-sizing: border-box;
-    
-     padding: 10px;
+    padding: 10px;
     display: flex;
     
      
@@ -48,13 +50,14 @@ font-weight: normal;
  .box-1,
  .box-2,
  .box-3 {
-     background:#55c7b4;
+    background:#55c7b4;
     box-sizing: border-box;
     width: 980px;
     margin: 0 500px 0 50px;
     padding: 25px;
     margin: 0 auto;
     display: flex;
+  
     
  }
  .box-1 {
@@ -66,7 +69,7 @@ font-weight: normal;
  .box-2 {
      margin: 0 20px 0 20px;
      border-radius: 50px 50px 50px 50px;
-     transform: skewY(20deg);
+     transform: skewY(10deg);
      
  }
 
@@ -79,7 +82,7 @@ font-weight: normal;
 .container .box-1 .link-1,
 .link-2,
 .link-3 {
-    font-family: monospace;
+    font-family:  monospace;
     height: 50%;
     font-size: 20px;
     width: 65px;
@@ -88,19 +91,34 @@ font-weight: normal;
  }
 
 .img-container {
-   
    display: flex;
    width: auto;
    height: 540px;
    margin: 0 auto;
    padding: 0 100px 0 75px;
+   
+}
+.img-container .img-child .hand,
+.balloon,
+.alien {
+    display: flex;
+    margin: 0 auto;
+    height: 540px;
+
 }
 
-.img-container .hand {
+.img-container .img-child .hand {
     margin: 0 20px 0 20px;
     border-radius: 25%;
 }
-.img-container .alien,
+.img-container .img-child .alien,
 .balloon {
     border-radius: 25%;
 }
+.img-container .img-child .hand,
+.balloon,
+.alien: :hover {
+    box-shadow: 0 10px 20px rgba(255,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.img-child {}
